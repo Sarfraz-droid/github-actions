@@ -6,6 +6,15 @@ on:
 jobs:
   label:
     runs-on: ubuntu-latest
+     actions: read
+  contents: read
+  security-events: write
+  permissions:
+      issues: write
+      pull-requests: write
+      actions: read
+      contents: read
+      security-events: write
     steps:
       - uses: github/issue-labeler@v3.0
         with:
