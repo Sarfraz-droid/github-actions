@@ -21,4 +21,3 @@ jobs:
           configuration-path: .github/labels.yml
           enable-versioned-regex: 0
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          sync-labels: 1
