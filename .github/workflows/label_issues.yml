@@ -13,8 +13,9 @@ jobs:
       pull-requests: write
     steps:
     - uses: actions/checkout@v2    
-    - uses: github/issue-labeler@v3.0 #May not be the latest version
+    - uses: github/issue-labeler@v3.0
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
         configuration-path: .github/labels.yml
         enable-versioned-regex: 0
+        include-title: 1
